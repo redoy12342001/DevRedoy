@@ -27,7 +27,7 @@ const Banner = () => {
         {/* <Meteors number={30} /> */}
         {/* 1st grid  */}
         <div className='col-span-4 space-y-5'>
-          <p className='text-muted font-semibold text-2xl'>Hello, I'm</p>
+          <p className='text-muted font-semibold text-2xl'>Hello, I&apos;m</p>
           <h1 className='font-bold text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
           <p className='font-bold text-white text-3xl'>React Js Developer</p>
           <div>
