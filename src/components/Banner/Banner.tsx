@@ -1,6 +1,6 @@
 import React from 'react'
 import { BannerIconCloud } from './IconCloud'
-import { Meteors } from '../magicui/meteors'
+// import { Meteors } from '../magicui/meteors'
 import { cn } from "@/lib/utils";
 import { DotPattern } from '../magicui/dot-pattern';
 

@@ -12,13 +12,13 @@ const navLinks = ["Home", "About", "Services", "Contact"]
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleStateChange = (state: { isOpen: boolean }) => {
-    setIsOpen(state.isOpen);
-  };
+  // const handleStateChange = (state: { isOpen: boolean }) => {
+  //   setIsOpen(state.isOpen);
+  // };
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  // const closeMenu = () => {
+  //   setIsOpen(false);
+  // };
 
   return (
     <nav className="flex justify-between items-center py-5 bg-black text-primary-foreground">
