@@ -58,7 +58,7 @@ const About = () => {
                 </div>
             </section>
             {/* img section  */}
-            <section className='pl-40'>
+            <section className='pl-60'>
                 <img src="/images/aboutme-img.png" alt="" />
             </section>
 

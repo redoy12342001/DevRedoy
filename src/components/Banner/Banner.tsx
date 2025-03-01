@@ -9,19 +9,20 @@ import { SparklesText } from '../magicui/sparkles-text';
 import { ShimmerButton } from '../magicui/shimmer-button';
 import { ShinyButton } from '../magicui/shiny-button';
 import { InteractiveHoverButton } from '../magicui/interactive-hover-button';
+import { NumberTicker } from '../magicui/number-ticker';
 
 
 const overview = [
   {
-    num: "2+",
+    num: 2,
     text: "Years of Learning"
   },
   {
-    num: "10+",
+    num: 10,
     text: "Projects Completed"
   },
   {
-    num: "20+",
+    num: 20,
     text: "Skills Learned"
   },
 ]
@@ -36,7 +37,7 @@ const Banner = () => {
           <p className='text-muted font-semibold text-2xl'>Hello, I&apos;m</p>
           <h1 className='font-bold text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
           <p className='font-bold text-white text-3xl'>React Js Developer</p>
-          <div className='flex gap-5 items-center font-light bg-primary p-3 rounded-full lg:mr-[220px]'>
+          <div className='flex gap-5 items-center font-light bg-primary p-3 rounded-full lg:mr-[210px]'>
             <ShimmerButton className="shadow-2xl bg-primary">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                 Hire Me
@@ -58,7 +59,14 @@ const Banner = () => {
         <div className='col-span-3 flex items-start justify-center md:ml-[15rem] md:flex-col gap-10'>
           {overview.map((i, index) => (
             <div className='space-y-3' key={index}>
-              <p className='text-primary font-bold text-4xl'>{i.num}</p>
+              {/* <p className='text-primary font-bold text-4xl'>{i.num}</p> */}
+              <div className='flex items-center gap-2 font-bold'>
+              <NumberTicker
+                value={i.num}
+                className="whitespace-pre-wrap text-3xl font-medium tracking-tighter text-primary dark:text-white"
+              />
+              <p className='text-primary'>+</p>
+              </div>
               <p className='text-muted font-bold text-xl'>{i.text}</p>
             </div>
           ))}
