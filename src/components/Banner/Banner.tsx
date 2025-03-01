@@ -3,6 +3,12 @@ import { BannerIconCloud } from './IconCloud'
 // import { Meteors } from '../magicui/meteors'
 import { cn } from "@/lib/utils";
 import { DotPattern } from '../magicui/dot-pattern';
+import { AnimatedShinyText } from '../magicui/animated-shiny-text';
+import { ArrowRightIcon } from 'lucide-react';
+import { SparklesText } from '../magicui/sparkles-text';
+import { ShimmerButton } from '../magicui/shimmer-button';
+import { ShinyButton } from '../magicui/shiny-button';
+import { InteractiveHoverButton } from '../magicui/interactive-hover-button';
 
 
 const overview = [
@@ -22,7 +28,7 @@ const overview = [
 
 const Banner = () => {
   return (
-    <div>
+    <div className=''>
       <div className='grid grid-cols-12 justify-between items-center w-full relative flex-col md:flex-row'>
         {/* <Meteors number={30} /> */}
         {/* 1st grid  */}
@@ -30,8 +36,16 @@ const Banner = () => {
           <p className='text-muted font-semibold text-2xl'>Hello, I&apos;m</p>
           <h1 className='font-bold text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
           <p className='font-bold text-white text-3xl'>React Js Developer</p>
-          <div>
-            <button className='bg-primary py-3 px-5 rounded-xl font-bold'>Hire Me</button>
+          <div className='flex gap-5 items-center font-light bg-primary p-3 rounded-full lg:mr-[220px]'>
+            <ShimmerButton className="shadow-2xl bg-primary">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Hire Me
+              </span>
+            </ShimmerButton>
+            {/* <SparklesText className={cn("text-3xl underline")} text='Download Resume'/> */}
+            <p className='font-semibold underline flex text-lg items-center gap-2 cursor-pointer'>Download Resume <span><ArrowRightIcon /></span> </p>
+            {/* <ShinyButton >Download Resume</ShinyButton> */}
+            {/* <InteractiveHoverButton>Resume</InteractiveHoverButton> */}
           </div>
         </div>
 
