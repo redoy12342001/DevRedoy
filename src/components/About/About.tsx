@@ -47,6 +47,7 @@ const About = () => {
             </section>
             {/* img section  */}
             <section className='pl-60'>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className='img-shadow' src="/images/aboutme-img.png" alt="" />
             </section>
 
