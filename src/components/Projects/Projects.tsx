@@ -25,15 +25,15 @@ const Projects = () => {
             <div>
                 {
                     projects.map((project, index) => (
-                        <div key={index} className='grid grid-cols-1 md:grid-cols-2'>
-                            <div className='border-3 border-primary m-20 rounded-xl overflow-hidden p-5'>
+                        <div key={index} className='grid grid-cols-1 md:grid-cols-2 items-center direction-reverse'>
+                            <div className='border-3 border-primary m-20 rounded-xl p-5'>
                                 <img className='rounded-xl' src={project.img} alt="" />
                             </div>
-                            <div className='m-20'>
+                            <div className='m-10 flex flex-col gap-10 items-start'>
                                 <p className='font-semibold text-lg text-primary'>{project.category}</p>
                                 <h1 className='text-xl font-bold'>{project.title}</h1>
-                                <p className='text-gray-400 text-sm font-semibold'>{project.desc}</p>
-                                <div className='rounded-full p-3 bg-black'>
+                                <p className='text-gray-400 font-semibold text-lg'>{project.desc}</p>
+                                <div className='rounded-full p-3 bg-black text-white'>
                                     <ArrowRight/>
                                 </div>
                             </div>
