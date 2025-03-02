@@ -6,6 +6,7 @@ import Banner from '@/components/Banner/Banner';
 import About from '@/components/About/About';
 import Services from '@/components/Services/Services';
 import Skills from '@/components/Skills/Skills';
+import Projects from '@/components/Projects/Projects';
 
 const HomePage = () => {
   // const { scrollYProgress } = useScroll()
@@ -28,6 +29,11 @@ const HomePage = () => {
         {/* skills section  */}
         <section>
           <Skills/>
+        </section>
+
+        {/* projects  */}
+        <section>
+          <Projects/>
         </section>
       </main>
 
