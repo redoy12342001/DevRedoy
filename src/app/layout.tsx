@@ -34,7 +34,7 @@ export default function RootLayout({
         {/* <nav><Navbar/></nav> */}
         <StickyCursor/>
         <ScrollToTop/>
-        <nav className=" px-[70px]"><Navbar/></nav>
+        <nav className="md:px-[70px]"><Navbar/></nav>
         <main>{children}</main>
         <footer><Footer/></footer>
       </body>

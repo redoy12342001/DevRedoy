@@ -12,8 +12,8 @@ import Contact from '@/components/Contact/Contact';
 const HomePage = () => {
   // const { scrollYProgress } = useScroll()
   return (
-    <div className='relative mx-[70px]'>
-      <header className='my-20'>
+    <div className='relative lg:mx-[70px]'>
+      <header className='lg:my-20'>
         <Banner />
       </header>
       <main className='space-y-40'>

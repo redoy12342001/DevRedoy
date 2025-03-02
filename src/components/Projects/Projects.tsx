@@ -25,9 +25,9 @@ const Projects = () => {
             <div>
                 {
                     projects.map((project, index) => (
-                        <div key={index} className={`flex items-center  ${index % 2 !== 0 && 'flex-row-reverse'}`}>
-                            <div className=' m-10 w-1/2'>
-                                <div className=' border-4 border-primary rounded-xl h-[350px] overflow-y-scroll custom-scrollbar hide-scrollbar'>
+                        <div key={index} className={`lg:flex items-center  ${index % 2 !== 0 && 'flex-row-reverse'}`}>
+                            <div className=' lg:m-10 w-1/2'>
+                                <div className=' border-4 border-primary rounded-xl w-full lg:h-[350px] overflow-y-scroll custom-scrollbar hide-scrollbar'>
                                     <img className='rounded-xl w-full ' src={project.img} alt="" />
                                 </div>
                             </div>
