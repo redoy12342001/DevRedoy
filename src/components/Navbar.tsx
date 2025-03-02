@@ -21,7 +21,7 @@ const Navbar = () => {
   // };
 
   return (
-    <nav className="flex justify-between items-center py-5 bg-black text-primary-foreground">
+    <nav className="flex justify-between items-center py-5 bg-background text-primary-foreground">
       {/* Logo */}
       <div>
         <h1 className="text-primary text-2xl font-bold">DevRedoy</h1>

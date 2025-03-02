@@ -1,22 +1,12 @@
 import React from 'react'
 import "./About.css"
-import { LetterTextIcon, PhoneCall, PhoneCallIcon } from 'lucide-react'
+import { LetterTextIcon, Mail, PhoneCall, PhoneCallIcon } from 'lucide-react'
 import { MorphingText } from '../magicui/morphing-text'
 
 const About = () => {
-    const texts = [
-        "Hello",
-        "Morphing",
-        "Text",
-        "Animation",
-        "React",
-        "Component",
-        "Smooth",
-        "Transition",
-        "Engaging",
-      ];
+    
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center '>
             {/* text section */}
             <section className='p-10'>
                 <small className='text-gray-400 font-semibold text-lg mb-5'>About Me</small>
@@ -33,33 +23,31 @@ const About = () => {
                     <div className="mt-10 styled-button flex flex-col items-start justify-start gap-5">
                         <div className='flex gap-3'>
                             <div className='p-3 rounded-full text-black bg-primary'>
-                                <LetterTextIcon className=''/>
+                                <Mail className='' />
                             </div>
                             <div className='flex items-start flex-col'>
-                            <p className='text-gray-400'>Email Me: </p>
-                            <p>bodruddozaredoy@gmail.com</p>
+                                <p className='text-gray-400'>Email Me: </p>
+                                <p>bodruddozaredoy@gmail.com</p>
                             </div>
                         </div>
-                        <hr className='border-1 border-primary w-full'/>
+                        <hr className='border-1 border-primary w-full' />
                         <div className='flex gap-3'>
                             <div className='p-3 rounded-full text-black bg-primary'>
-                                <PhoneCallIcon className=''/>
+                                <PhoneCallIcon className='' />
                             </div>
                             <div className='flex items-start flex-col'>
-                            <p className='text-gray-400'>Whatsapp Me: </p>
-                            <p>+880 175 838 69</p>
+                                <p className='text-gray-400'>Whatsapp Me: </p>
+                                <p>+880 175 838 69</p>
                             </div>
                         </div>
-                        <hr className='border-1 border-primary w-full'/>
-                        
-                        
+                        <hr className='border-1 border-primary w-full' />
                     </div>
 
                 </div>
             </section>
             {/* img section  */}
             <section className='pl-60'>
-                <img src="/images/aboutme-img.png" alt="" />
+                <img className='img-shadow' src="/images/aboutme-img.png" alt="" />
             </section>
 
         </div>

@@ -27,11 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
       >
         {/* <nav><Navbar/></nav> */}
         <StickyCursor/>
-        <nav className="bg-black px-[70px]"><Navbar/></nav>
+        <nav className=" px-[70px]"><Navbar/></nav>
         <main>{children}</main>
         <footer></footer>
       </body>

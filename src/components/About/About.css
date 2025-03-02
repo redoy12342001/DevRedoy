@@ -15,6 +15,11 @@
     /* justify-content: center; */
     border: 1px solid #292929;
   }
+
+  .img-shadow{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+
+  }
   
   .styled-button::before {
     content: "";
