@@ -19,7 +19,7 @@ const StickyCursor = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-6 h-6 bg-primary rounded-full pointer-events-none mix-blend-difference"
+      className="fixed top-0 left-0 w-6 h-6 bg-primary rounded-full pointer-events-none mix-blend-difference z-[999999]"
       animate={{
         x: position.x - 12, // Offset to center the cursor
         y: position.y - 12,

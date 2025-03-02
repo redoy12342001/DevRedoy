@@ -1,14 +1,9 @@
 import React from 'react'
 import { BannerIconCloud } from './IconCloud'
-// import { Meteors } from '../magicui/meteors'
 import { cn } from "@/lib/utils";
 import { DotPattern } from '../magicui/dot-pattern';
-import { AnimatedShinyText } from '../magicui/animated-shiny-text';
 import { ArrowRightIcon } from 'lucide-react';
-import { SparklesText } from '../magicui/sparkles-text';
 import { ShimmerButton } from '../magicui/shimmer-button';
-import { ShinyButton } from '../magicui/shiny-button';
-import { InteractiveHoverButton } from '../magicui/interactive-hover-button';
 import { NumberTicker } from '../magicui/number-ticker';
 
 
@@ -29,11 +24,11 @@ const overview = [
 
 const Banner = () => {
   return (
-    <div className=''>
-      <div className='grid grid-cols-12 justify-between items-center w-full relative flex-col md:flex-row'>
+    <div className='containerPattern'>
+      <div className='grid grid-cols-12 justify-between items-center w-full relative flex-col md:flex-row '>
         {/* <Meteors number={30} /> */}
         {/* 1st grid  */}
-        <div className='col-span-4 space-y-5'>
+        <div className='col-span-4 space-y-5 '>
           <p className='text-muted font-semibold text-2xl'>Hello, I&apos;m</p>
           <h1 className='font-bold text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
           <p className='font-bold text-white text-3xl'>React Js Developer</p>
@@ -72,11 +67,11 @@ const Banner = () => {
           ))}
         </div>
       </div>
-      <DotPattern
+      {/* <DotPattern
         className={cn(
           "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
         )}
-      />
+      /> */}
     </div>
   )
 }

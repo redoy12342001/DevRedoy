@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu as MenuIcon, X } from "lucide-react"; // Import icons
 import "./Navbar.css";
+import { MenuBtn } from "./AnimatedHamburgerButoon";
 
 
 const navLinks = ["Home", "About", "Services", "Contact"]
@@ -40,9 +41,10 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <div className="">
-        <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+        {/* <button onClick={() => setIsOpen(!isOpen)} className="text-white">
           {isOpen ? <X size={30} /> : <MenuIcon size={30} />}
-        </button>
+        </button> */}
+        <MenuBtn/>
       </div>
 
       {/* Mobile Sidebar Menu */}

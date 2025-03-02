@@ -27,9 +27,9 @@ const Services = () => {
             <small className='text-gray-400 font-semibold text-lg mb-5 text-center'>Popular Services</small>
             <h1 className='mb-5 text-5xl text-white text-center leading-normal'>My <span className='text-primary'>Special Service</span> For your <br /> Business Development</h1>
             {/* services box */}
-            <div className='grid grid-cols-2 justify-center items-center gap-20'>
+            <div className='grid grid-cols-2 items-center gap-20'>
                 {services.map((service, index) => (
-                    <div key={index} className="card flex justify-between gap-10">
+                    <div key={index} className="customCard flex justify-between gap-10">
                         <p className='text-primary text-xl font-bold'>0{index+1}.</p>
                         <div className='flex items-center gap-10'>
                             <div>

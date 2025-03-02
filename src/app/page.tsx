@@ -7,12 +7,13 @@ import About from '@/components/About/About';
 import Services from '@/components/Services/Services';
 import Skills from '@/components/Skills/Skills';
 import Projects from '@/components/Projects/Projects';
+import Contact from '@/components/Contact/Contact';
 
 const HomePage = () => {
   // const { scrollYProgress } = useScroll()
   return (
     <div className='relative mx-[70px]'>
-      <header className=' my-20'>
+      <header className='my-20'>
         <Banner />
       </header>
       <main className='space-y-40'>
@@ -28,12 +29,17 @@ const HomePage = () => {
 
         {/* skills section  */}
         <section>
-          <Skills/>
+          <Skills />
         </section>
 
         {/* projects  */}
         <section>
-          <Projects/>
+          <Projects />
+        </section>
+
+        {/* Contacts  */}
+        <section>
+          <Contact />
         </section>
       </main>
 
