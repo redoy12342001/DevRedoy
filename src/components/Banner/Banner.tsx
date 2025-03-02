@@ -1,7 +1,5 @@
 import React from 'react'
 import { BannerIconCloud } from './IconCloud'
-import { cn } from "@/lib/utils";
-import { DotPattern } from '../magicui/dot-pattern';
 import { ArrowRightIcon } from 'lucide-react';
 import { ShimmerButton } from '../magicui/shimmer-button';
 import { NumberTicker } from '../magicui/number-ticker';

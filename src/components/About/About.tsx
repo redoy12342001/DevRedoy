@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css"
-import { LetterTextIcon, Mail, PhoneCall, PhoneCallIcon } from 'lucide-react'
-import { MorphingText } from '../magicui/morphing-text'
+import {  Mail, PhoneCallIcon } from 'lucide-react'
+// import { MorphingText } from '../magicui/morphing-text'
 
 const About = () => {
     
