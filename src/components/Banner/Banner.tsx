@@ -32,16 +32,13 @@ const Banner = () => {
           <h1 className='font-bold text-4xl text-center lg:text-start lg:text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
           {/* <p className='font-bold text-white text-3xl text-center lg:text-start'>React Js Developer</p> */}
           <Typewriter/>
-          <div className='flex gap-5 items-center font-light bg-primary p-3 rounded-full lg:mr-[210px]'>
+          <div className='flex gap-5 items-center font-light bg-primary p-3 rounded-full lg:mr-[200px]'>
             <ShimmerButton className="shadow-2xl bg-primary">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                 Hire Me
               </span>
             </ShimmerButton>
-            {/* <SparklesText className={cn("text-3xl underline")} text='Download Resume'/> */}
-            <p className='font-semibold underline flex text-lg items-center gap-2 cursor-pointer'>Download Resume <span><ArrowRightIcon /></span> </p>
-            {/* <ShinyButton >Download Resume</ShinyButton> */}
-            {/* <InteractiveHoverButton>Resume</InteractiveHoverButton> */}
+            <p className='font-semibold underline flex lg:text-lg items-center gap-2 cursor-pointer'>Download Resume <span><ArrowRightIcon /></span> </p>
           </div>
         </div>
 
