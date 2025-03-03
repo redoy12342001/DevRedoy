@@ -3,6 +3,7 @@ import { BannerIconCloud } from './IconCloud'
 import { ArrowRightIcon } from 'lucide-react';
 import { ShimmerButton } from '../magicui/shimmer-button';
 import { NumberTicker } from '../magicui/number-ticker';
+import Typewriter from '../TypeWritter';
 
 
 const overview = [
@@ -29,7 +30,8 @@ const Banner = () => {
         <div className='lg:col-span-4 space-y-5 '>
           <p className='text-muted font-semibold text-2xl text-center lg:text-start'>Hello, I&apos;m</p>
           <h1 className='font-bold text-4xl text-center lg:text-start lg:text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
-          <p className='font-bold text-white text-3xl text-center lg:text-start'>React Js Developer</p>
+          {/* <p className='font-bold text-white text-3xl text-center lg:text-start'>React Js Developer</p> */}
+          <Typewriter/>
           <div className='flex gap-5 items-center font-light bg-primary p-3 rounded-full lg:mr-[210px]'>
             <ShimmerButton className="shadow-2xl bg-primary">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">

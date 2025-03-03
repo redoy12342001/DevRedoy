@@ -23,13 +23,13 @@ const services = [
 
 const Services = () => {
     return (
-        <div className='flex flex-col gap-5 justify-center items-center'>
+        <div className='flex flex-col gap-5 justify-center items-center mx-4'>
             <small className='text-gray-400 font-semibold text-lg mb-5 text-center'>Popular Services</small>
-            <h1 className='mb-5 text-5xl text-white text-center leading-normal'>My <span className='text-primary'>Special Service</span> For your <br /> Business Development</h1>
+            <h1 className='mb-5 lg:text-5xl text-3xl text-white text-center leading-normal'>My <span className='text-primary'>Special Service</span> For your <br /> Business Development</h1>
             {/* services box */}
-            <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-20'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-20'>
                 {services.map((service, index) => (
-                    <div key={index} className="customCard flex justify-between gap-10">
+                    <div key={index} className="customCard flex flex-col lg:flex-row justify-between gap-5 lg:gap-10">
                         <p className='text-primary text-xl font-bold'>0{index+1}.</p>
                         <div className='flex items-center gap-10'>
                             <div>

@@ -16,7 +16,7 @@ const HomePage = () => {
       <header className='lg:my-20'>
         <Banner />
       </header>
-      <main className='space-y-40'>
+      <main className='space-y-20 lg:space-y-40'>
         {/* about section  */}
         <section className='text-white lg:pt-40'>
           <About />

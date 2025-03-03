@@ -4,13 +4,13 @@ import "./Contact.css"
 
 const Contact = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-5 gap-10 items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-5 lg:gap-10 items-center'>
             {/* text  */}
-            <section className='col-span-2 space-y-5'>
+            <section className='col-span-2 space-y-5 flex flex-col items-center lg:items-start mb-4 lg:mb-0'>
                 <small className='text-gray-400 font-semibold text-lg mb-5'>Get In Touch</small>
-                <h1 className='mb-5 text-5xl text-white'> <span className='text-primary'>Let’s Talk For your</span> Next Projects</h1>
+                <h1 className='mb-5 text-3xl lg:text-5xl text-white text-center lg:text-start'> <span className='text-primary'>Let’s Talk For your</span> Next Projects</h1>
                 {/* <MorphingText texts={texts} /> */}
-                <p className='text-gray-400'>Whether it's crafting intuitive front-end interfaces or building robust back-end systems, I am committed to delivering impactful solutions that meet user and business needs.</p>
+                <p className='text-gray-400 text-center lg:text-start'>Whether it's crafting intuitive front-end interfaces or building robust back-end systems, I am committed to delivering impactful solutions that meet user and business needs.</p>
                 <div className='flex gap-4 items-center'>
                     <div className='p-2 bg-primary rounded-full'><Check /></div>
                     <p className='text-gray-400 font-semibold'>2+ Years of Learning Experience</p>
@@ -28,20 +28,20 @@ const Contact = () => {
             </section>
             {/* form  */}
             <section className='col-span-3'>
-                <div className='grid grid-cols-2 gap-10 border-2 border-primary p-10 rounded-xl'>
-                    <div className="container">
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 border-2 border-primary p-5 lg:p-10 rounded-xl'>
+                    <div className="container col-span-2 lg:col-span-1">
                         <input required type="text" name="text" className="input" />
                         <label className="label">Full Name</label>
                     </div>
-                    <div className="container">
+                    <div className="container col-span-2 lg:col-span-1">
                         <input required type="text" name="text" className="input" />
                         <label className="label">Email Address</label>
                     </div>
-                    <div className="container">
+                    <div className="container col-span-2 lg:col-span-1">
                         <input required type="text" name="text" className="input" />
                         <label className="label">Phone Number</label>
                     </div>
-                    <div className="container">
+                    <div className="container col-span-2 lg:col-span-1">
                         <input required type="text" name="text" className="input" />
                         <label className="label">Subject</label>
                     </div>
