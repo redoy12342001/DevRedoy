@@ -12,7 +12,7 @@ const Typewriter = () => {
   });
 
   return (
-    <p className="text-white" style={{fontSize:"30px"}}>
+    <p className="text-white text-center lg:text-start" style={{fontSize:"30px"}}>
       {text}
       <Cursor cursorStyle="|" />
     </p>
