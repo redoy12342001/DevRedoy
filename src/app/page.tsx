@@ -12,18 +12,18 @@ import Contact from '@/components/Contact/Contact';
 const HomePage = () => {
   // const { scrollYProgress } = useScroll()
   return (
-    <div className='relative lg:mx-[70px]'>
+    <div className='relative  xl:mx-[70px]'>
       <header className='lg:my-20'>
         <Banner />
       </header>
       <main className='space-y-20 lg:space-y-40'>
         {/* about section  */}
-        <section className='text-white lg:pt-40'>
+        <section className='text-white lg:pt-40 mx-4 lg:mx-10 xl:mx-0'>
           <About />
         </section>
 
         {/* services section  */}
-        <section>
+        <section className='mx-4 lg:mx-10 xl:mx-0'>
           <Services />
         </section>
 
@@ -33,12 +33,12 @@ const HomePage = () => {
         </section>
 
         {/* projects  */}
-        <section>
+        <section className='mx-4 lg:mx-10 xl:mx-0'>
           <Projects />
         </section>
 
         {/* Contacts  */}
-        <section>
+        <section className='md:mx-4 lg:mx-10 xl:mx-0'>
           <Contact />
         </section>
       </main>

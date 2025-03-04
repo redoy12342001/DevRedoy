@@ -24,21 +24,25 @@ const overview = [
 const Banner = () => {
   return (
     <div className='m-4'>
-      <div className='grid grid-cols-1 lg:grid-cols-12 justify-between items-center w-full relative flex-col md:flex-row '>
-        {/* <Meteors number={30} /> */}
+      <div className='grid grid-cols-1 xl:grid-cols-12 justify-between items-center w-full relative flex-col md:flex-row '>
+
         {/* 1st grid  */}
         <div className='lg:col-span-4 space-y-5 '>
-          <p className='text-muted font-semibold text-2xl text-center lg:text-start'>Hello, I&apos;m</p>
-          <h1 className='font-bold text-4xl text-center lg:text-start lg:text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
-          {/* <p className='font-bold text-white text-3xl text-center lg:text-start'>React Js Developer</p> */}
-          <Typewriter/>
-          <div className='flex gap-5 items-center font-light bg-primary p-3 rounded-full w-full lg:w-full xl:w-3/4'>
-            <ShimmerButton className="shadow-2xl bg-primary">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Hire Me
-              </span>
-            </ShimmerButton>
-            <p className='font-semibold underline flex lg:text-lg items-center gap-2 cursor-pointer'>Download Resume <span><ArrowRightIcon /></span> </p>
+          <p className='text-muted font-semibold text-2xl text-center xl:text-start'>Hello, I&apos;m</p>
+          <h1 className='font-bold text-4xl text-center xl:text-start lg:text-6xl text-primary'>Bodruddoza <br /> Redoy</h1>
+          <Typewriter />
+          {/* button  */}
+          <div className="flex justify-center xl:justify-start">
+            <div className="inline-flex gap-5 items-center font-light bg-primary p-3 rounded-full">
+              <ShimmerButton className="shadow-2xl bg-primary">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                  Hire Me
+                </span>
+              </ShimmerButton>
+              <p className='font-semibold underline flex lg:text-lg items-center gap-2 cursor-pointer'>
+                Download Resume <span><ArrowRightIcon /></span>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -48,9 +52,9 @@ const Banner = () => {
         </div>
 
         {/* 3rd grid */}
-        <div className='lg:col-span-3 flex items-start justify-center md:ml-[15rem] md:flex-col gap-10 mx-4'>
+        <div className='lg:col-span-3 flex items-start justify-center xl:ml-[15rem] xl:flex-col gap-10 lg:gap-20 xl:gap-10 mx-4'>
           {overview.map((i, index) => (
-            <div className='space-y-3 flex flex-col items-center lg:items-start' key={index}>
+            <div className='space-y-3 flex flex-col items-center xl:items-start' key={index}>
               {/* <p className='text-primary font-bold text-4xl'>{i.num}</p> */}
               <div className='flex items-center gap-2 font-bold'>
                 <NumberTicker

@@ -22,7 +22,7 @@ const Navbar = () => {
   // };
 
   return (
-    <nav className="flex justify-between items-center p-4 lg:py-5 bg-background text-primary-foreground">
+    <nav className="flex justify-between items-center p-4 md:py-10 bg-background text-primary-foreground">
       {/* Logo */}
       <div>
         <h1 className="text-primary text-2xl font-bold">DevRedoy</h1>
@@ -30,38 +30,24 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex gap-6">
+      <div className="hidden lg:flex gap-6">
         {
           navLinks.map((nav, index) => (
             <Link key={index} href={nav === "Home" ? "/" : `/${nav.toLowerCase()}`} className="hover:text-primary text-white font-semibold">{nav}</Link>
           ))
         }
-        
+
       </div>
 
-      {/* Mobile Menu Button */}
-      <div className="">
-        {/* <button onClick={() => setIsOpen(!isOpen)} className="text-white">
-          {isOpen ? <X size={30} /> : <MenuIcon size={30} />}
-        </button> */}
-        <MenuBtn/>
+      <div>
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden">
+          <MenuBtn />
+        </div>
+        <button className="py-3 px-6 bg-primary rounded-xl text-black font-semibold hidden lg:flex">Contact Me</button>
       </div>
 
-      {/* Mobile Sidebar Menu */}
-      {/* <Menu isOpen={isOpen} onStateChange={handleStateChange} right>
-        <Link href="/" className="menu-item" onClick={closeMenu}>
-          Home
-        </Link>
-        <Link href="/about" className="menu-item" onClick={closeMenu}>
-          About
-        </Link>
-        <Link href="/services" className="menu-item" onClick={closeMenu}>
-          Services
-        </Link>
-        <Link href="/contact" className="menu-item" onClick={closeMenu}>
-          Contact
-        </Link>
-      </Menu> */}
+
     </nav>
   );
 };

@@ -4,7 +4,7 @@ import "./Contact.css"
 
 const Contact = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-5 lg:gap-10 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-5 lg:gap-10 items-center'>
             {/* text  */}
             <section className='col-span-2 space-y-5 flex flex-col items-center lg:items-start mb-4 lg:mb-0'>
                 <small className='text-gray-400 font-semibold text-lg mb-5'>Get In Touch</small>
