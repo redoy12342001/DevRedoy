@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import StickyCursor from "@/components/StickyCursor";
 import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import { Analytics } from '@vercel/analytics/next';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +38,7 @@ export default function RootLayout({
         <ScrollToTop/>
         <nav className="md:px-[70px]"><Navbar/></nav>
         <main>{children}</main>
+        <Analytics />
         <footer><Footer/></footer>
       </body>
     </html>
