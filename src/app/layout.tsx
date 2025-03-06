@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -6,6 +7,7 @@ import StickyCursor from "@/components/StickyCursor";
 import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Analytics } from '@vercel/analytics/next';
+// import { usePathname } from "next/navigation";
 
 
 const geistSans = Geist({
@@ -23,23 +25,20 @@ export const metadata: Metadata = {
   description: "A Portfolio Web App of Bodruddoza Redoy",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
+  // const isDashboard = typeof window === "undefined" ? false : window.location.pathname.startsWith("/admin-boy");
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background flex flex-col min-h-screen`}
       >
         {/* <nav><Navbar/></nav> */}
-        <StickyCursor/>
-        <ScrollToTop/>
-        <nav className="md:px-[70px]"><Navbar/></nav>
-        <main>{children}</main>
+        <StickyCursor />
+        <ScrollToTop />
+         <nav className="md:px-[70px] z-10"><Navbar /></nav>
+        <main className="flex-1">{children}</main>
         <Analytics />
-        <footer><Footer/></footer>
+        <footer> <Footer /></footer>
       </body>
     </html>
   );

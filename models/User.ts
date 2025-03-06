@@ -1,11 +1,11 @@
 import mongoose, { Document } from "mongoose";
 
-export interface IUser extends Document{ //? explain
+export interface IAdminUser extends Document{ //? explain
     name: string,
     email: string
 }
 
-const UserSchema = new mongoose.Schema(
+const AdminUserSchema = new mongoose.Schema(
   {
     name: String,
     email: String,
@@ -13,4 +13,4 @@ const UserSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export const User =mongoose.models.User || mongoose.model("User", UserSchema) //? explain
+export const Admin =mongoose.models.User || mongoose.model("admin", AdminUserSchema) //? explain

@@ -19,26 +19,7 @@ const slugs = [
   "https://img.icons8.com/?size=100&id=62452&format=png&color=000000",
 
 ];
-// const slugs = [
-//   "typescript",
-//   "javascript",
-//   "MongoDB",
-//   "react",
-//   "html5",
-//   "css3",
-//   "nodedotjs",
-//   "express",
-//   "nextdotjs",
-//   "firebase",
-//   "vercel",
-//   "git",
-//   "github",
-//   "visualstudiocode",
-//   "figma",
-//   "Node.js",
-//   "Tailwind CSS",
 
-// ];
 
 export function BannerIconCloud() {
   const images = slugs.map(
