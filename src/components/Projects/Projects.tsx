@@ -25,8 +25,8 @@ const Projects = () => {
             <div className='flex flex-col items-center justify-center'>
                 {
                     projects.map((project, index) => (
-                        <div>
-                            <div key={index} className={`lg:flex items-center justify-center w-full  ${index % 2 !== 0 && 'flex-row-reverse'}`}>
+                        <div key={index}>
+                            <div  className={`lg:flex items-center justify-center w-full  ${index % 2 !== 0 && 'flex-row-reverse'}`}>
                                 <div className=' lg:m-10 lg:w-1/2'>
                                     <div className=' border-4 border-primary rounded-xl w-full h-[200px] md:h-[350px] overflow-y-scroll custom-scrollbar hide-scrollbar'>
                                         <img className='rounded-xl w-full ' src={project.img} alt="" />

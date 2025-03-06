@@ -23,7 +23,7 @@ const Navbar = () => {
   //   setIsOpen(false);
   // };
 
-  if (!pathname.includes("admin")) {
+  if (!pathname.includes("dashboard")) {
 
     return (
       <nav className="flex justify-between items-center p-4 md:py-10 bg-background text-primary-foreground">
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
           <div className=" flex items-center gap-3">
             <button className="py-3 px-6 bg-primary rounded-xl text-black font-semibold hidden lg:flex">Contact Me</button>
-            <Link href={"admin-boy"}><button className="py-3 px-6 bg-primary rounded-xl text-black font-semibold hidden lg:flex">Admin</button></Link>
+            <Link href={"dashboard"}><button className="py-3 px-6 bg-primary rounded-xl text-black font-semibold hidden lg:flex">Admin</button></Link>
           </div>
         </div>
 

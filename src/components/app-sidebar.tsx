@@ -3,12 +3,15 @@
 import * as React from "react"
 import {
   AudioWaveform,
+  BetweenHorizonalStart,
   BookOpen,
   Bot,
   Command,
+  FolderKanban,
   Frame,
   GalleryVerticalEnd,
   Home,
+  HomeIcon,
   Map,
   PieChart,
   Settings2,
@@ -43,88 +46,58 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
-      icon: SquareTerminal,
+      title: "Home",
+      url: "/",
+      icon: HomeIcon,
       isActive: true,
+      
+    },
+    {
+      title: "Blogs",
+      url: "/admin-boy/blogs",
+      icon: BetweenHorizonalStart,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "All Blogs",
+          url: "/dashboard/blogs",
         },
         {
-          title: "Starred",
+          title: "Add Blog",
           url: "#",
         },
-        {
-          title: "Settings",
-          url: "#",
-        },
+        
       ],
     },
     {
-      title: "Models",
+      title: "Projects",
       url: "#",
-      icon: Bot,
+      icon: FolderKanban,
       items: [
         {
-          title: "Genesis",
+          title: "All Projects",
           url: "#",
         },
         {
-          title: "Explorer",
+          title: "Add Project",
           url: "#",
         },
-        {
-          title: "Quantum",
-          url: "#",
-        },
+       
       ],
     },
     {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
+      title: "Services",
       url: "#",
       icon: Settings2,
       items: [
         {
-          title: "General",
+          title: "All Services",
           url: "#",
         },
         {
-          title: "Team",
+          title: "Add Service",
           url: "#",
         },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
+        
       ],
     },
   ],
@@ -133,6 +106,11 @@ const data = {
       name: "Home",
       url: "/",
       icon: Home,
+    },
+    {
+      name: "Blogs",
+      url: "/blogs",
+      icon: BetweenHorizonalStart,
     },
     
   ],
